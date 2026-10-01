@@ -2,7 +2,7 @@
 
 SentinelAI is a production-style decision system that bridges the gap between predictive machine learning and agentic forensic investigation. Instead of relying on a "black box" fraud score, SentinelAI uses an ensemble of ML models to detect anomalies and a LangGraph-powered agent to investigate the "why" behind each alert.
 
-## 🏛️ Architecture
+## Architecture
 
 The system follows a **Predict $\rightarrow$ Explain $\rightarrow$ Investigate $\rightarrow$ Recommend** pipeline:
 
@@ -14,7 +14,7 @@ The system follows a **Predict $\rightarrow$ Explain $\rightarrow$ Investigate $
     - **Decision Agent**: Synthesizes all evidence into a structured investigation report.
 4. **Human-in-the-Loop (HITL)**: The system presents a recommended action (e.g., "Hold Account") to a human analyst for final approval.
 
-## 🛠️ Tech Stack (V1)
+## Tech Stack (V1)
 
 - **Language**: Python 3.10+
 - **ML**: XGBoost, Scikit-learn, SHAP
@@ -24,7 +24,7 @@ The system follows a **Predict $\rightarrow$ Explain $\rightarrow$ Investigate $
 - **UI**: Streamlit / React
 - **MLOps**: MLflow, Docker
 
-## 📈 Key Metrics for Evaluation
+## Key Metrics for Evaluation
 
 - **ML Performance**: ROC-AUC, PR-AUC, False Positive Rate (FPR).
 - **Agent Fidelity**: Citation accuracy, Hallucination rate (via RAGAS), Tool-call success rate.
